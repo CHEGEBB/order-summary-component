@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+::before,
+::after
+body{
+background-color: hsl(225, 100%, 94%); 
+justify-content: center;
+align-items: center;
+display: flex;
+/* background-image: url("/images/pattern-background-desktop.svg") ; */
+
+}
+.container{
+background-color: #ffff;
+text-align: center;
+align-items: center;
+height: 80vh;
+display: inline-block;
+max-width: 400px;
+justify-content: center;
+border-radius: 18px;
+font-family: 'Red Hat Display', sans-serif;
+}
+.image{
+    justify-content: center;
+    width:400px;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+
+
+}
+h1{
+    color:hsl(223, 47%, 23%) ;
+    font-size: 25px;
+}
+p{
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    display: inline-block;
+    white-space: pre-line;
+}
+.pay{
+    background-color:hsl(225, 100%, 98%);
+    height: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    gap: 1rem;
+    flex-direction: column;
+}
+.annual{
+    font-weight: 900;
+    text-align: center; 
+    color:hsl(223, 47%, 23%) ;
+    margin-bottom: 40px;
+    padding-right: 40px;
+    /* display: inline; */
+
+}
+
+.price {
+    text-align: left;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    position: relative;
+    bottom: 100%;
+  }
+  
+.icon{
+
+    padding-right:10px;
+}
+button{
+justify-content: center;
+margin-top: 30px;
+height: 45px;
+width: 320px;
+border-radius: 10px;
+background-color:hsl(245, 75%, 52%);
+color:hsl(225, 100%, 98%) ;
+font-family: 'Red Hat Display', sans-serif;
+border: none;
+box-shadow: 2px 12px 12px #3498db;
+font-weight: 700;
+padding-right: 25px;
+
+}
+.cancel{
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+}
+.change{
+color: hsl(245, 75%, 52%);
+margin-left: 20px;
+text-decoration: underline;
+}
+/* @media screen and (min-width: 375px) {
+.container{
+    max-height: 80vh;
+    max-width: 375px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; */
+
+@media screen and (max-width: 768px) {
+    .container {
+      max-width: 100%;
+    border-radius: 0;
+    padding: 10px;
+    text-align: center; 
+    box-shadow: none; 
+    margin: 0; 
+    overflow: hidden; 
+    position: relative; 
+  
+    h1 {
+      font-size: 22px; 
+    }
+  
+    .annual,
+    .price,
+    .change {
+      text-align: center; 
+    }
+  }
+  
+  .pay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 0;
+    height: auto;
+  }
+  
+  .button {
+    width: 100%; 
+    max-width: 320px; 
+  }
+  
+  .cancel {
+    margin-top: 10px; 
+  }
+
+}
