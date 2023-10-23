@@ -1,6 +1,148 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
-::before,
-::after
-body{
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Red+Hat+Display:wght@500;700;900&display=swap");
 
+body {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  background-size: contain;
+  display: flex;
+  
+  
+}
+.container {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #ffff;
+  max-width: 400px;
+  border-radius: 18px;
+  /* height: 100vh; */
+}
+.image {
+  justify-content: center;
+  width: 400px;
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+}
+h1 {
+  color: hsl(223, 47%, 23%);
+  font-size: 25px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+}
+p {
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+  display: inline-block;
+  white-space: pre-line;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.pay {
+  background-color:hsl(225, 100%, 98%);
+  
+margin-left: 40px;
+margin-right: 40px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0 1rem;
+
+}
+
+.annual {
+  display: flex;
+  flex-direction: column;
+  color:hsl(223, 47%, 23%) ;
+  font-weight: 900;
+  
+}
+.desc {
+  display: flex;
+  gap: 1rem;
+  place-items: center;
+
+}
+.change {
+  color: hsl(245, 75%, 52%);
+  align-self: center;
+  font-weight: 700;
+  
+
+  text-decoration: underline;
+}
+
+button {
+  justify-content: center;
+  margin-top: 30px;
+  height: 45px;
+  width: 320px;
+  border-radius: 10px;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  font-family: "Red Hat Display", sans-serif;
+  border: none;
+  box-shadow: 2px 4px 12px #3498db;
+  font-weight: 700;
+  padding-right: 25px;
+}
+.cancel {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    border-radius: 0;
+    text-align: center;
+    box-shadow: none;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    border-radius:18px ;
+
+    h1 {
+      font-size: 22px;
+    }
+
+    .annual,
+    .price,
+    .change {
+      text-align: center;
+      
+    }
+  }
+
+  .pay {
+    background-color:hsl(225, 100%, 98%);
+  
+    margin-left: 20px;
+    margin-right: 20px;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      justify-content: space-between;
+      padding: 0 1rem;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 320px;
+    
+  }
+
+  .cancel {
+    margin-top: 10px;
+  }
 }
